@@ -16,9 +16,11 @@ Draft and in-review content never appears in this repository.
 | Part | One item per | Main fields |
 |---|---|---|
 | `sectors` | Sector | `_id`, `label`, `order` |
+| `topics` | Topic | `_id`, `label`, `order` |
 | `concepts` | Approved concept (a glossary term, with its acronyms) | `_id`, `term`, `acronyms`, `aliases`, `sectors`, `shortDefinition`, `bodyHtml`, `sectorNotes`, `jurisdictions`, `sourcesHtml`, `related`, `explainers`, `lastReviewed`, `searchKeys` |
 | `acronyms` | Acronym of an approved concept | `acronym`, `conceptId`, `term`, `sectors`, `notes`, `searchKeys` |
-| `explainers` | Approved explainer | `_id`, `title`, `summary`, `bodyHtml`, `sectors`, `concepts`, `sourcesHtml`, `lastReviewed` |
+| `explainers` | Approved explainer | `_id`, `title`, `summary`, `bodyHtml`, `sectors`, `topics`, `concepts`, `sourcesHtml`, `lastReviewed` |
+| `resources` | Approved framework guide, governance toolkit item or authority profile | `_id`, `kind`, `title`, `summary`, `bodyHtml`, `sectors`, `topics`, `concepts`, `lastReviewed` |
 
 `generated` gives the build date and `status` is always `approved`. Field definitions are in the Lunis Knowledge
 Base README.
